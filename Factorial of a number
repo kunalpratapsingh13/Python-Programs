@@ -1,0 +1,17 @@
+#Method-1 : Recursion
+def factorial(n): 
+	return 1 if (n==1 or n==0) else n * factorial(n - 1); 
+
+num = 5; 
+print("Factorial of",num,"is", 
+factorial(num)) 
+
+
+#Method-2: Iteration
+n=int(input("Enter number:"))
+fact=1
+while(n>0):
+    fact=fact*n
+    n=n-1
+print("Factorial of the number is: ")
+print(fact)
